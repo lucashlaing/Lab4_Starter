@@ -27,6 +27,10 @@ function sumValues(num1, num2, add) {
 function discountPrices(prices, discount) {
     const discounted = [];
     const length = prices.length;
+
+    // Small edge cases check
+    if(!Array.isArray(prices)) return false;
+    if(discount == NaN) return false;
     if(length == 0) return false;
 
     let discountedPrice = 0
