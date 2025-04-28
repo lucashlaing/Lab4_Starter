@@ -6,7 +6,7 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
-    if(num1 == NaN || num2 == NaN) return false;
+    if(isNaN(num1) || isNaN(num2)) return false;
     if (add) {
         let result = 0;
 
@@ -31,7 +31,7 @@ function discountPrices(prices, discount) {
 
     // Small edge cases check
     if(!Array.isArray(prices)) return false;
-    if(discount == NaN) return false;
+    if(isNaN(length)) return false;
     if(length == 0) return false;
 
     let discountedPrice = 0
